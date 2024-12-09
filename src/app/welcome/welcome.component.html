@@ -1,0 +1,17 @@
+<div>
+    <img src="letter-a-logo-7c65ceec-ca7f-46d9-a375-c56629d04a0e.jpg" alt="LogoA">
+    <H2 class="boh">Ahmed Douik</H2>
+</div> 
+<div class="login-container">
+    <h2>Connexion</h2>
+    
+    <input
+      type="text" placeholder="Entrez votre prénom" [(ngModel)]="inpName" class="input-field" />
+    
+    <button (click)="login()" class="login-button">
+      Connexion
+    </button>
+  
+    <p *ngIf="isLoggedIn" class="welcome-message">Bienvenue, {{ username }}!</p>
+  </div>
+  

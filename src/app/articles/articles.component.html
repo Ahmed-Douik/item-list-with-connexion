@@ -1,0 +1,22 @@
+
+<div class="articles-container">
+    <h2>Liste des Articles</h2>
+    
+    <div *ngFor="let article of articles" class="article">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.content }}</p>
+    </div>
+  
+    <h3>Ajouter un nouvel article</h3>
+    
+    <input 
+      type="text" placeholder="Titre de l'article" [(ngModel)]="nvTitre" class="input-field" 
+    />
+    
+    <textarea 
+      placeholder="Contenu de l'article" [(ngModel)]="nvContenu" class="input-field textarea-field">
+    </textarea>
+    
+    <button (click)="ajArticle()" class="add-button">Ajouter l'article</button>
+  </div>
+  
